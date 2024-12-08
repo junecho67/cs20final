@@ -6,48 +6,63 @@ body {
   }
   
   /* Navigation Bar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff; /* White background */
-    padding: 15px 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    height: 80px; /* Adjust size as needed */
-    margin-right: 20px;
-  }
-  
-  .brand-name {
-    font-size: 20px;
-    font-weight: bold;
-    color: #4b0082; /* Indigo color for the brand name */
-  }
-  
-  .nav-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-right a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #4b0082; /* Purple font for all links */
-    margin-left: 20px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .nav-right a:hover {
-    color: #af4ff3; /* Light purple on hover */
-    
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* White background */
+  padding: 15px 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navigation bar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px; /* Adjust size as needed */
+  margin-right: 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #4b0082; /* Purple font for all links */
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #af4ff3; /* Light purple on hover */
+}
+
+/* Matchmaking Survey Button */
+.survey-btn {
+  background-color: #4b0082; /* Purple button */
+  color: white !important; /* Ensures font color is white */
+  padding: 10px 20px;
+  border-radius: 50px; /* Circular shape */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.survey-btn:hover {
+  background-color: #af4ff3; /* Pink background on hover */
+  color: white; /* Keeps text white */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow */
+}
   
   /* Matchmaking Survey Button */
 .survey-btn {
