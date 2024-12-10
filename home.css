@@ -208,3 +208,354 @@ body {
     }
   }
   
+/* Get Involved Page Styling */
+.get-involved {
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Light grey background for the section */
+  text-align: center;
+}
+
+.get-involved h1 {
+  font-size: 36px;
+  color: #4b0082; /* Purple headline */
+  margin-bottom: 20px;
+}
+
+.get-involved p {
+  font-size: 18px;
+  color: #333; /* Neutral text color */
+  margin-bottom: 40px;
+}
+
+/* Options Container */
+.get-involved-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Option Cards */
+.option {
+  background-color: white;
+  border: 1px solid #ddd; /* Subtle border for card definition */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  text-align: left;
+  flex: 1;
+  max-width: 300px; /* Limit width for each card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option h2 {
+  font-size: 20px;
+  color: #4b0082;
+  margin-bottom: 15px;
+}
+
+.option p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.option a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.option a:hover {
+  background-color: #af4ff3;
+  transform: translateY(-2px); /* Slight hover lift */
+}
+
+.option:hover {
+  transform: translateY(-5px); /* Card lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #ffffff; 
+    color: #4b0082; /* Purple text for readability */
+    padding: 20px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #4b0082; /* Strong purple for headlines */
+  }
+  
+  .cta-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333; /* Neutral text color */
+  }
+  
+  .cta-section .cta-button {
+    text-decoration: none;
+    background-color: #4b0082; /* Purple button */
+    color: white; /* White text for readability */
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cta-section .cta-button:hover {
+    background-color: #af4ff3; /* Brighter purple for hover effect */
+  }
+  
+
+/* Responsive Design for Get Involved Options */
+@media screen and (max-width: 768px) {
+  .get-involved-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .option {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* Donation Section */
+.donation-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .donation-section h1 {
+    color: #4b0082;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .donation-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .donation-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donation-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b0082;
+  }
+  
+  .donation-form input,
+  .donation-form select,
+  .donation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .donation-form textarea {
+    height: 100px;
+  }
+  
+  .donate-button {
+    background-color: #4b0082;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .donate-button:hover {
+    background-color: #af4ff3;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4b0082;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #af4ff3;
+  }
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #f9f9f9; /* Light grey background */
+  }
+  
+  .page-header h1 {
+    font-size: 36px;
+    color: #4b0082;
+    margin-bottom: 10px;
+  }
+  
+  .page-header p {
+    font-size: 18px;
+    color: #333;
+  }
+
+/* Volunteer Opportunities Section */
+#volunteer-opportunities {
+    padding: 40px 20px;
+    background-color: #ffffff; /* White background */
+    text-align: center;
+  }
+  
+  #volunteer-opportunities h2 {
+    font-size: 32px;
+    color: #4b0082;
+    margin-bottom: 30px;
+  }
+  
+  .opportunity {
+    background-color: #e2c7f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    display: inline-block;
+    max-width: 300px;
+  }
+  
+  .opportunity h3 {
+    font-size: 20px;
+    color: #4b0082;
+    margin-bottom: 15px;
+  }
+  
+  .opportunity p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .opportunity:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Get Started Section */
+  #get-started {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #get-started h2 {
+    font-size: 28px;
+    color: #4b0082;
+    margin-bottom: 20px;
+  }
+  
+  #get-started p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #get-started button {
+    background-color: #4b0082;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #get-started button:hover {
+    background-color: #af4ff3;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4b0082;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  footer .footer-section {
+    margin: 10px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  footer .newsletter button {
+    background-color: #af4ff3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  footer .newsletter button:hover {
+    background-color: #ffffff;
+    color: #4b0082;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #af4ff3;
+    padding-top: 10px;
+    font-size: 14px;
+  }
