@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawfectMatch | Find Your Pet</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="home.html">
+        <img src="logo.png" alt="PawfectMatch Logo" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="get-involved.html">Get Involved</a>
+      <a href="login.html">Log In</a>
+      <a href="matchmaking-survey.html" class="survey-btn">Matchmaking Survey</a>
+    </div>
+  </nav>
+
+  <!-- Matchmaking Survey Section -->
+  <div class="container">
+    <h1>Find Your Perfect Pet</h1>
+    <p class="form-description">Use the form below to search for adoptable pets near you.</p>
+
+    <form id="matchmaking-form">
+      <div class="form-group">
+        <label for="species">Species</label>
+        <select id="species" name="species" required>
+          <option value="">Select...</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="rabbit">Rabbit</option>
+          <option value="bird">Bird</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="breed">Breed</label>
+        <select id="breed" name="breed">
+          <option value="">Select...</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="age">Age</label>
+        <select id="age" name="age">
+          <option value="">Select...</option>
+          <option value="puppy">Puppy</option>
+          <option value="kitten">Kitten</option>
+          <option value="young">Young</option>
+          <option value="adult">Adult</option>
+          <option value="senior">Senior</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="sex">Sex</label>
+        <select id="sex" name="sex">
+          <option value="">Select...</option>
+          <option value="m">Male</option>
+          <option value="f">Female</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="size">Size</label>
+        <select id="size" name="size">
+          <option value="">Select...</option>
+          <option value="1">Small (Under 25 lbs)</option>
+          <option value="2">Medium (26-60 lbs)</option>
+          <option value="3">Large (61-100 lbs)</option>
+          <option value="4">Extra Large (Over 100 lbs)</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="location">ZIP Code</label>
+        <input type="text" id="location" name="location" placeholder="Enter ZIP Code" required>
+      </div>
+    
+      <button type="submit" class="submit-btn">Search</button>
+    </form>
+  
+    <!-- Results Section -->
+    <div id="results" class="results"></div>
+
+    <!-- Powered by Adopt-a-Pet Logo -->
+    <div class="adoptapet-logo">
+      <a href="https://www.adoptapet.com" target="_blank">
+        <img src="adoptapetlogo.png" alt="Adopt-a-Pet Logo">
+      </a>
+      <p>Powered by <a href="https://www.adoptapet.com" target="_blank">Adopt-a-Pet.com</a></p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section socials">
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+        <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+      </div>
+      <div class="footer-section links">
+        <a href="contact.html">Contact Us</a> |
+        <a href="support.html">Customer Support</a>
+      </div>
+      <div class="footer-section newsletter">
+        <h3>Subscribe to PawfectMatch</h3>
+        <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 PawfectMatch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
