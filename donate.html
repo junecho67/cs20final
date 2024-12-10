@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - PawfectMatch</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="home.html">
+        <img src="logo.png" alt="PawfectMatch Logo" class="logo">
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="getinvolved.html" class="active">Get Involved</a>
+      <a href="login.html">Log In</a>
+      <a href="matchmaking-survey.html" class="survey-btn">Matchmaking Survey</a>
+    </div>
+  </nav>
+
+  <!-- Donation Section -->
+  <section class="donation-section">
+    <h1>Make a Difference with Your Donation</h1>
+    <p>Your contributions help us support shelters and find loving homes for pets.</p>
+
+    <form action="#" method="post" class="donation-form">
+      <!-- Donation Amount -->
+      <label for="donation-amount">Choose Donation Amount:</label>
+      <select id="donation-amount" name="amount" required>
+        <option value="10">$10</option>
+        <option value="25">$25</option>
+        <option value="50">$50</option>
+        <option value="100">$100</option>
+        <option value="custom">Custom Amount</option>
+      </select>
+
+      <!-- Custom Amount -->
+      <input type="number" id="custom-amount" name="customAmount" placeholder="Enter Custom Amount" style="display: none;" min="1">
+
+      <!-- Payment Details -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="message">Leave a Note (Optional):</label>
+      <textarea id="message" name="message" placeholder="Write a message..."></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit" class="donate-button">Donate Now</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section socials">
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+        <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+      </div>
+      <div class="footer-section links">
+        <a href="contact.html">Contact Us</a> |
+        <a href="support.html">Customer Support</a>
+      </div>
+      <div class="footer-section newsletter">
+        <h3>Subscribe to PawfectMatch</h3>
+        <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 PawfectMatch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Show custom amount input when "Custom Amount" is selected
+    const donationAmount = document.getElementById('donation-amount');
+    const customAmountInput = document.getElementById('custom-amount');
+
+    donationAmount.addEventListener('change', () => {
+      if (donationAmount.value === 'custom') {
+        customAmountInput.style.display = 'block';
+      } else {
+        customAmountInput.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
