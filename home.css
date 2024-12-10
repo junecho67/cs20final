@@ -7,62 +7,63 @@ body {
   
   /* Navigation Bar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff; /* White background */
-  padding: 15px 30px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navigation bar */
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 80px; /* Adjust size as needed */
-  margin-right: 20px;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-}
-
-.nav-right a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #4b0082; /* Purple font for all links */
-  margin-left: 20px;
-  transition: color 0.3s ease;
-}
-
-.nav-right a:hover {
-  color: #af4ff3; /* Light purple on hover */
-}
-
-/* Matchmaking Survey Button */
-.survey-btn {
-  background-color: #4b0082; /* Purple button */
-  color: white !important; /* Ensures font color is white */
-  padding: 10px 20px;
-  border-radius: 50px; /* Circular shape */
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-}
-
-.survey-btn:hover {
-  background-color: #af4ff3; /* Pink background on hover */
-  color: white; /* Keeps text white */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow */
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* White background */
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navigation bar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 80px; /* Adjust size as needed */
+    margin-right: 20px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #4b0082; /* Purple font for all links */
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right a:hover {
+    color: #af4ff3; /* Light purple on hover */
+  }
+  
+  /* Matchmaking Survey Button */
+  .survey-btn {
+    background-color: #4b0082; /* Purple button */
+    color: white !important; /* Ensures font color is white */
+    padding: 10px 20px;
+    border-radius: 50px; /* Circular shape */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  }
+  
+  .survey-btn:hover {
+    background-color: #af4ff3; /* Pink background on hover */
+    color: white; /* Keeps text white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow */
+  }
+  
   
   /* Matchmaking Survey Button */
 .survey-btn {
@@ -208,354 +209,129 @@ body {
     }
   }
   
-/* Get Involved Page Styling */
-.get-involved {
-  padding: 40px 20px;
-  background-color: #f9f9f9; /* Light grey background for the section */
-  text-align: center;
+/* Banner Styling */
+.banner {
+    background: url('banner.png') no-repeat center center; /* Ensure the image is centered */
+    background-size: cover; /* Make sure the image fills the banner area */
+    color: white;
+    height: 400px; /* Set height for the banner */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: relative; /* For overlay */
+    overflow: hidden; /* Prevent unexpected overflow */
 }
 
-.get-involved h1 {
-  font-size: 36px;
-  color: #4b0082; /* Purple headline */
-  margin-bottom: 20px;
-}
-
-.get-involved p {
-  font-size: 18px;
-  color: #333; /* Neutral text color */
-  margin-bottom: 40px;
-}
-
-/* Options Container */
-.get-involved-options {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Individual Option Cards */
-.option {
-  background-color: white;
-  border: 1px solid #ddd; /* Subtle border for card definition */
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 20px;
-  text-align: left;
-  flex: 1;
-  max-width: 300px; /* Limit width for each card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.option h2 {
-  font-size: 20px;
-  color: #4b0082;
-  margin-bottom: 15px;
-}
-
-.option p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.option a {
-  display: inline-block;
-  text-decoration: none;
-  background-color: #4b0082;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.option a:hover {
-  background-color: #af4ff3;
-  transform: translateY(-2px); /* Slight hover lift */
-}
-
-.option:hover {
-  transform: translateY(-5px); /* Card lift effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-/* CTA Section */
-.cta-section {
-    background-color: #ffffff; 
-    color: #4b0082; /* Purple text for readability */
-    padding: 20px 20px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .cta-section h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #4b0082; /* Strong purple for headlines */
-  }
-  
-  .cta-section p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #333; /* Neutral text color */
-  }
-  
-  .cta-section .cta-button {
-    text-decoration: none;
-    background-color: #4b0082; /* Purple button */
-    color: white; /* White text for readability */
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .cta-section .cta-button:hover {
-    background-color: #af4ff3; /* Brighter purple for hover effect */
-  }
-  
-
-/* Responsive Design for Get Involved Options */
-@media screen and (max-width: 768px) {
-  .get-involved-options {
+.banner-content {
+    position: absolute; /* Make the content fill the entire banner */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the banner */
+    height: 100%; /* Full height of the banner */
+    background-color: rgba(60, 16, 91, 0.6); /* Purple semi-transparent overlay */
+    display: flex; /* Center text inside the overlay */
     flex-direction: column;
     align-items: center;
-  }
-
-  .option {
-    max-width: 100%; /* Full width for smaller screens */
-  }
+    justify-content: center;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
 }
 
-/* Donation Section */
-.donation-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  .donation-section h1 {
-    color: #4b0082;
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-  
-  .donation-section p {
+.banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .donation-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .donation-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #4b0082;
-  }
-  
-  .donation-form input,
-  .donation-form select,
-  .donation-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .donation-form textarea {
-    height: 100px;
-  }
-  
-  .donate-button {
-    background-color: #4b0082;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .donate-button:hover {
-    background-color: #af4ff3;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #4b0082;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer a:hover {
-    color: #af4ff3;
-  }
+}
 
-/* Page Header */
-.page-header {
+.cta-button {
+    background-color: #ffffff;
+    color: #4b0082;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff99ff;
+    color: #4b0082;
+}
+
+/* Section Spacing */
+.banner + .ad-section {
+    margin-top: 20px;
+}
+
+.ad-section + .adoption-info {
+    margin-top: 40px;
+}
+
+  
+/* Ad Section */
+.ad-section {
     text-align: center;
-    padding: 20px 10px;
-    background-color: #f9f9f9; /* Light grey background */
+    margin: 40px 0;
+}
+
+.ad-image {
+    width: 100%; /* Ensure responsive scaling */
+    max-width: 650px; /* Shrink the ad image further */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+  /* Adoption Information Section */
+  .adoption-info {
+    text-align: center;
+    padding: 80px 40px;
+    background-color: #f9f9f9;
   }
   
-  .page-header h1 {
-    font-size: 36px;
+  .adoption-info h2 {
+    font-size: 32px;
+    color: #4b0082;
+    margin-bottom: 20px;
+  }
+  
+  .adoption-info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .info-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .info-item h3 {
+    font-size: 20px;
     color: #4b0082;
     margin-bottom: 10px;
   }
   
-  .page-header p {
-    font-size: 18px;
-    color: #333;
-  }
-
-/* Volunteer Opportunities Section */
-#volunteer-opportunities {
-    padding: 40px 20px;
-    background-color: #ffffff; /* White background */
-    text-align: center;
-  }
-  
-  #volunteer-opportunities h2 {
-    font-size: 32px;
-    color: #4b0082;
-    margin-bottom: 30px;
-  }
-  
-  .opportunity {
-    background-color: #e2c7f4;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    text-align: left;
-    display: inline-block;
-    max-width: 300px;
-  }
-  
-  .opportunity h3 {
-    font-size: 20px;
-    color: #4b0082;
-    margin-bottom: 15px;
-  }
-  
-  .opportunity p {
-    font-size: 14px;
+  .info-item p {
+    font-size: 16px;
     color: #555;
-  }
-  
-  .opportunity:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Get Started Section */
-  #get-started {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
-  
-  #get-started h2 {
-    font-size: 28px;
-    color: #4b0082;
-    margin-bottom: 20px;
-  }
-  
-  #get-started p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  #get-started button {
-    background-color: #4b0082;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  #get-started button:hover {
-    background-color: #af4ff3;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #4b0082;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
-  }
-  
-  footer .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-  
-  footer .footer-section {
-    margin: 10px;
-  }
-  
-  footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 5px;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
-  footer .newsletter input {
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  footer .newsletter button {
-    background-color: #af4ff3;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  footer .newsletter button:hover {
-    background-color: #ffffff;
-    color: #4b0082;
-  }
-  
-  .footer-bottom {
-    border-top: 1px solid #af4ff3;
-    padding-top: 10px;
-    font-size: 14px;
   }
