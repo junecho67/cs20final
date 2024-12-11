@@ -3,7 +3,6 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
 // Database credentials
 $servername = "localhost"; // Use "127.0.0.1" or your database server's IP address
 $username = "umhcngkikzypt"; // Replace with your MySQL username
