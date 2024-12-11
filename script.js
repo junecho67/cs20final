@@ -48,22 +48,51 @@ document.getElementById('matchmaking-form').addEventListener('submit', async (e)
   const size = document.getElementById('size').value;
   const location = document.getElementById('location').value;
 
-  const params = new URLSearchParams({
-    key: apiKey,
-    v: 3,
-    output: 'json',
-    city_or_zip: location,
-    geo_range: '50',
+  const formData = {
     species,
-    breed_id: breed,
+    breed,
     age,
     sex,
-    pet_size_range_id: size,
-    start_number: 1,
-    end_number: 10,
-  });
+    size,
+    location,
+  };
 
   try {
+    // Save data to the server
+    const saveResponse = await fetch('save_data.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const saveResult = await saveResponse.text();
+    console.log('Save Data Response:', saveResult);
+
+    if (saveResponse.ok) {
+      alert('Your preferences have been saved!');
+    } else {
+      console.error('Error saving data:', saveResult);
+      alert('Failed to save your preferences. Please try again.');
+    }
+
+    // Fetch and display pet search results
+    const params = new URLSearchParams({
+      key: apiKey,
+      v: 3,
+      output: 'json',
+      city_or_zip: location,
+      geo_range: '50',
+      species,
+      breed_id: breed,
+      age,
+      sex,
+      pet_size_range_id: size,
+      start_number: 1,
+      end_number: 10,
+    });
+
     const response = await fetch(`${petSearchEndpoint}?${params}`);
     const data = await response.json();
 
