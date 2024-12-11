@@ -117,7 +117,7 @@
       <p id="password_error"></p>
 
       <button type="submit" class="survey-btn">Signup</button>
-      <br>
+      <p>Have an account? Log in <a href="login.php"here</a></p>
     </form>
 
     <?php 
